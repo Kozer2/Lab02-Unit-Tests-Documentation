@@ -3,7 +3,7 @@
 This lab is a demonstration of a working ATM. As a User you are given a bank balance and can check its balance, withdaw money, or deposit money. 
 
 To run the lab:
-Click the Green Arrow Labeled: "Lab2-Unit_Tests_Documentation"
+Click the Green Arrow Labeled: "Lab2-Unit_Tests_Documentation"  
 ![Picture Demo](assests/Capture.PNG) "Picture Demo")  
 
 To Run the lab tests: 
