@@ -99,7 +99,7 @@ namespace Lab02_Unit_Tests_Documentation
             
             if (num < 0)
             {
-                throw new ApplicationException($"You entered an Amount Less than 0!");
+                throw new ArgumentOutOfRangeException(null, $"You entered an Amount Less than 0!") ;
             } // end if
             else
             {
