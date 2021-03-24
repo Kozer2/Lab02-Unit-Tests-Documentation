@@ -11,7 +11,7 @@ namespace Lab02_Unit_Tests_Documentation
             Console.WriteLine("Hello Welcome to My ATM. An ATM of ATM Corp.");
             userInterface();
         } // end Main Method
-         public static void userInterface()
+        public static void userInterface()
         {
             string one = "View Balance";
             string two = "Withdraw";
@@ -39,7 +39,7 @@ namespace Lab02_Unit_Tests_Documentation
                 Console.WriteLine($"Please enter the amount you want to withdraw. Your balance is: ${Balance}.");
                 decimal withdrawAmount = Convert.ToDecimal(Console.ReadLine());
                 decimal withDrawn = Withdraw(withdrawAmount);
-                
+
                 Console.WriteLine($"You have withdrawn ${withdrawAmount}. Your new Balance is: ${withDrawn}.");
                 userInterface();
             } // end else if
@@ -76,7 +76,7 @@ namespace Lab02_Unit_Tests_Documentation
 
         public static decimal Withdraw(decimal num)
         {
-            
+
             if (num > Balance)
             {
                 throw new ApplicationException($"You tried to withdraw {num} which is greater " +
@@ -96,17 +96,17 @@ namespace Lab02_Unit_Tests_Documentation
 
         public static decimal Deposit(decimal num)
         {
-            
+
             if (num < 0)
             {
-                throw new ApplicationException($"You entered an Amount Less than 0!");
+                throw new ArgumentOutOfRangeException(null, $"You entered an Amount Less than 0!");
             } // end if
             else
             {
                 Balance = Balance + num;
                 return Balance;
             } // end else
-            
+
         } // end Deposit method
     }
 }
